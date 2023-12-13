@@ -7,14 +7,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install dependencies
-          command: |
-            python -m venv venv
-            . venv/bin/activate
-            pip install -r requirements.txt
-      - run:
           name: Run tests
           command: |
+            python -m venv venv
             . venv/bin/activate
             # Run your test suite here, for example:
             # python -m unittest discover tests
